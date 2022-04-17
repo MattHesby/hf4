@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // create a schema
-const nuevanSchema = new Schema({
+const gameSchema = new Schema({
     // Simple declaration of datatype that will be used:
     name: String,
     // You can add specifics to each one too that help with validation, like making something required, or unique
@@ -29,4 +29,4 @@ const nuevanSchema = new Schema({
 });
 
 
-module.exports = mongoose.model("Nuevan", nuevanSchema);
+module.exports = mongoose.model("Game", gameSchema);
